@@ -60,7 +60,3 @@ The calculator includes input validation and will throw errors for:
 
 - All values are rounded to 2 decimal places for display
 - Final payment is adjusted to ensure the loan is fully paid off
-
-## License
-
-[Add your chosen license here]
