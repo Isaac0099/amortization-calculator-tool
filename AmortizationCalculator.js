@@ -56,11 +56,14 @@ class AmortizationCalculator {
       typeof annualInterestRate !== "number" ||
       typeof loanTermYears !== "number"
     ) {
-      throw new Error("All parameters must be numbers");
+      throw new Error(`All amo calcl parameters must be numbers \n 
+                      principal: ${typeof(principal)} \n
+                      interest rate: ${typeof(annualInterestRate)} \n
+                      loan term; ${typeof(loanTermYears)}`);
     }
 
     if (principal <= 0 || annualInterestRate <= 0 || loanTermYears <= 0) {
-      throw new Error("All parameters must be positive numbers");
+      throw new Error("All amo calc parameters must be positive numbers");
     }
 
     const monthlyRate = annualInterestRate / 100 / 12;
